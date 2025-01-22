@@ -1,3 +1,5 @@
+using AstroLib
+
 AstroLib.observatories["icecube"] = AstroLib.Observatory(
     "IceCube",
     -90 * units.degree,
@@ -40,8 +42,8 @@ AstroLib.observatories["gvd"] = AstroLib.Observatory(
 
 AstroLib.observatories["tambo"] = AstroLib.Observatory(
     "TAMBO",
-    coords.larger_valley.latitude,
-    coords.larger_valley.longitude,
+    larger_valley_coord.latitude,
+    larger_valley_coord.longitude,
     2units.m,
     -7
 )
